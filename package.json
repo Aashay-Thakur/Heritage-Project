@@ -1,0 +1,22 @@
+{
+	"name": "heritage-project",
+	"version": "1.0.0",
+	"description": "",
+	"devlopment": "true",
+	"scripts": {
+		"node": "nodemon app.js",
+		"start": "node app.js",
+		"watchBuild": "webpack --config webpack.config.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@firebase/app": "^0.7.19",
+		"@firebase/firestore": "^3.4.6",
+		"ejs": "^3.1.6",
+		"express": "^4.17.3",
+		"webpack": "^5.70.0"
+	}
+}
