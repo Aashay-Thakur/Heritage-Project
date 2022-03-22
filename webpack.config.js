@@ -4,6 +4,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
 	entry: {
 		location: ["./src/scripts/location.js", "./src/styles/location.scss"],
+		index: [
+			"./src/scripts/index.js",
+			"./src/scripts/parallax-scroll.js",
+			"./src/styles/index.sass",
+			"./src/styles/parallax-scroll.scss",
+			"./src/styles/mask-style.css",
+		],
 	},
 	output: {
 		filename: "static/scripts/[name].js",
@@ -17,8 +24,12 @@ module.exports = {
 				use: ["source-map-loader"],
 			},
 			{
-				test: /\.scss$/,
+				test: /\.s[ca]ss$/,
 				use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+			},
+			{
+				test: /\.css$/,
+				use: [MiniCssExtractPlugin.loader, "css-loader"],
 			},
 		],
 	},

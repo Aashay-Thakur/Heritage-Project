@@ -13,10 +13,20 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@firebase/app": "^0.7.19",
-		"@firebase/firestore": "^3.4.6",
+		"css-loader": "^6.7.1",
 		"ejs": "^3.1.6",
 		"express": "^4.17.3",
-		"webpack": "^5.70.0"
+		"firebase": "^9.6.9",
+		"firebase-admin": "^10.0.2",
+		"jquery": "^3.6.0",
+		"lodash": "^4.17.21",
+		"mini-css-extract-plugin": "^2.6.0",
+		"source-map-loader": "^3.0.1"
+	},
+	"devDependencies": {
+		"sass": "^1.49.9",
+		"sass-loader": "^12.6.0",
+		"webpack": "^5.70.0",
+		"webpack-cli": "^4.9.2"
 	}
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI6e6fGfrtOYExhhGoy_XCkdyuuaf8s0I&callback=initMap"></script>
+		<link rel="stylesheet" href="styles/location.css" />
+	</head>
+	<body>
+		<main>
+			<div class="parallax-container">
+				<div class="parallax"><img src="" /></div>
+			</div>
+			<div class="section white">
+				<div class="row container">
+					<h2 class="header">Parallax</h2>
+					<p class="grey-text text-darken-3 lighten-3">
+						Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground
+						content while scrolling.
+					</p>
+				</div>
+			</div>
+			<div class="parallax-container">
+				<div class="parallax"><img src="" /></div>
+			</div>
+			<div class="section white">
+				<div class="row container">
+					<h2 class="header">Location</h2>
+					<div id="map"></div>
+				</div>
+			</div>
+		</main>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var elems = document.querySelectorAll(".parallax");
+				var instances = M.Parallax.init(elems, {});
+			});
+
+			// function initMap() {
+			// 	const location = { lat: 27.173891, lng: 78.042068 };
+			// 	const map = new google.maps.Map(document.getElementById("map"), {
+			// 		zoom: 8,
+			// 		center: location,
+			// 		mapTypeId: "hybrid",
+			// 	});
+			// 	const marker = new google.maps.Marker({
+			// 		position: location,
+			// 		map: map,
+			// 	});
+			// }
+		</script>
+		<script src="scripts/location.js"></script>
+	</body>
+</html>
