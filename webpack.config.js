@@ -3,7 +3,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
 	entry: {
-		location: ["./src/scripts/location.js", "./src/styles/location.scss"],
+		location: [
+			"./src/scripts/location.js",
+			"./src/styles/location.scss",
+			"./src/scripts/parallax-scroll.js",
+			"./src/styles/location-parallax.scss",
+			"./src/styles/mask-style.css",
+			"./src/styles/index.sass",
+		],
 		index: [
 			"./src/scripts/index.js",
 			"./src/scripts/parallax-scroll.js",

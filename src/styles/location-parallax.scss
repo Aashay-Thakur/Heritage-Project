@@ -42,26 +42,10 @@ body {
 		background-color: rgba(0, 0, 0, 0.3);
 	}
 	&:first-child {
-		background-image: url(https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg);
 		transform: translateY(-$parallax-offset * 0.5);
 		.content-wrapper {
 			transform: translateY($parallax-offset * 0.5);
 		}
-	}
-	&:nth-child(2) {
-		background-image: url(https://i.postimg.cc/W14vywqg/photo-1424746219973-8fe3bd07d8e3.jpg);
-	}
-	&:nth-child(3) {
-		background-image: url(https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg);
-		// background-image: url(../resources/images/Homepage2.jpg);
-	}
-	&:nth-child(4) {
-		background-image: url(https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg);
-	}
-	&:nth-child(5) {
-		background-image: url(https://i.postimg.cc/W14vywqg/photo-1424746219973-8fe3bd07d8e3.jpg);
-		// background-image: url(../resources/images/Homepage2.jpg);
-		// background: transparent;
 	}
 }
 

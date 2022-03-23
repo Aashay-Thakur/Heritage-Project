@@ -1,6 +1,10 @@
+import { db } from "./firebase-config.js";
+import { getDocs, collection } from "firebase/firestore";
 import $ from "jquery";
 
 document.addEventListener("DOMContentLoaded", (e) => {
+	let autoCompleteData = {};
+
 	var elems = document.querySelectorAll(".sidenav");
 	var sidenavInstances = M.Sidenav.init(elems);
 
@@ -13,6 +17,18 @@ document.addEventListener("DOMContentLoaded", (e) => {
 		shift: 100,
 		padding: 30,
 		noWrap: true,
+	});
+
+	getDocs(collection(db, "location")).then((querySnapshot) => {
+		querySnapshot.forEach((doc) => {
+			autoCompleteData[doc.data().name] = null;
+		});
+	});
+
+	var autocomplete = document.querySelectorAll(".autocomplete");
+	var instances = M.Autocomplete.init(autocomplete, {
+		data: autoCompleteData,
+		onAutocomplete: onSelect,
 	});
 });
 
@@ -29,3 +45,8 @@ $('input[type="search"]').on("click focus blur ", (e) => {
 		$(".links > ul > li > a").css("color", "white");
 	}
 });
+
+function onSelect() {
+	let loc = $("#autocomplete-input").val();
+	location.href = `/location/${loc}`;
+}

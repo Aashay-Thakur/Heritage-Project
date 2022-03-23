@@ -25,8 +25,8 @@ app.get("/", function (req, res) {
 	res.sendFile("views/index.html", { root: rootPath });
 });
 
-app.get("/location", function (req, res) {
-	res.sendFile("views/location.html", { root: rootPath });
+app.get("/location/:locationRef", function (req, res) {
+	res.sendFile("views/location.html", { root: rootPath, header: { locationRef: req.params.locationRef } });
 });
 
 // Static files
