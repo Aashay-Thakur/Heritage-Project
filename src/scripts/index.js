@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 		});
 	});
 
-	var autocomplete = document.querySelectorAll(".autocomplete");
+	var autocomplete = document.querySelector(".search");
 	var instances = M.Autocomplete.init(autocomplete, {
 		data: autoCompleteData,
 		onAutocomplete: onSelect,
@@ -38,15 +38,7 @@ window.addEventListener("wheel", (e) => {
 	}
 });
 
-$('input[type="search"]').on("click focus blur ", (e) => {
-	if ($('input[type="search"]').is(":focus")) {
-		$(".links > ul > li > a").css("color", "black");
-	} else {
-		$(".links > ul > li > a").css("color", "white");
-	}
-});
-
 function onSelect() {
-	let loc = $("#autocomplete-input").val();
+	let loc = $(".search").val();
 	location.href = `/location/${loc}`;
 }

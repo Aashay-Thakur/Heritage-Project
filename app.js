@@ -25,6 +25,10 @@ app.get("/", function (req, res) {
 	res.sendFile("views/index.html", { root: rootPath });
 });
 
+app.get("/explore", function (req, res) {
+	res.sendFile("views/all.html", { root: rootPath });
+});
+
 app.get("/location/:locationRef", function (req, res) {
 	res.sendFile("views/location.html", { root: rootPath, header: { locationRef: req.params.locationRef } });
 });

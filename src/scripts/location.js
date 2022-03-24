@@ -21,6 +21,7 @@ const backgrounds = document.querySelectorAll(".background");
 getDocs(query(collection(db, "location"), where("name", "==", locationRef))).then((Snapshot) => {
 	if (!Snapshot.empty) {
 		let doc = Snapshot.docs[0].data();
+		console.log(doc);
 		let { name, description, state } = doc;
 		let imageArr = doc.images;
 

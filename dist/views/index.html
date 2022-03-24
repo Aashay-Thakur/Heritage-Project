@@ -12,18 +12,7 @@
 			<div class="navbar-fixed">
 				<nav style="background-color: #1f2833">
 					<div class="nav-wrapper">
-						<a href="#!" class="brand-logo"></a>
-						<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-						<div class="search-field">
-							<form>
-								<div class="input-field">
-									<input id="autocomplete-input" class="autocomplete" type="search" required />
-									<label class="label-icon" for="autocomplete-input" style="cursor: pointer">
-										<i class="material-icons">search</i>
-									</label>
-								</div>
-							</form>
-						</div>
+						<a href="/explore" class="brand-logo center">Explore</a>
 					</div>
 				</nav>
 			</div>
@@ -37,13 +26,16 @@
 								<div class="cd-intro-content mask">
 									<h1 data-content="Animated Intro Section"><span>Animated Intro Section</span></h1>
 									<div class="action-wrapper">
-										<div class="cd-btn main-action waves-effect left waves-light gradient-45deg-purple-deep-orange">
-											<a href="#0">Explore</a>
-										</div>
-										<div class="cd-btn">
-											<a>Learn More</a>
-										</div>
+										<div class="cd-btn main-action left" ">
+										<a href="/explore">Get started</a>
 									</div>
+									<div class="cd-btn" onclick="document.querySelector('.search').focus();">
+										<a>Learn More</a>
+									</div>
+								</div>
+								<div class="input-field">
+									<input id="search" class="search" type="search" style="padding-left: 2rem" autocomplete="off" />
+									<label class="label-icon" for="search"><i class="material-icons">search</i></label>
 								</div>
 							</section>
 						</div>

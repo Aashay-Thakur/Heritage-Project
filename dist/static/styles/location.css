@@ -542,10 +542,11 @@ body {
   background: transparent !important;
   border: 3px solid white;
   transition: all 500ms ease-out !important;
+  cursor: pointer;
 }
 .cd-btn.main-action:hover, .cd-btn.main-action:focus {
   color: black !important;
-  background-color: white !important;
+  background-color: #ffffffc0 !important;
 }
 
 .scrolling-wrapper {
@@ -584,5 +585,12 @@ nav .links {
   right: 0;
 }
 nav .links.active > ul > li > a {
+  color: black !important;
+}
+
+.search {
+  color: white;
+}
+.search:focus {
   color: black !important;
 }
