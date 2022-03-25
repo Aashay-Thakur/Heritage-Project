@@ -11,6 +11,10 @@
   width: 100%;
   /* The width is the width of the web page */
 }
+
+.background {
+  background-size: cover;
+}
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/location-parallax.scss (1) ***!
   \********************************************************************************************************************************/

@@ -18,7 +18,7 @@ module.exports = {
 			"./src/styles/parallax-scroll.scss",
 			"./src/styles/mask-style.css",
 		],
-		all: ["./src/scripts/all.js"],
+		all: ["./src/scripts/all.js", "./src/styles/all.scss"],
 	},
 	output: {
 		filename: "static/scripts/[name].js",
