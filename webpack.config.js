@@ -35,7 +35,7 @@ module.exports = {
 			},
 		],
 	},
-	mode: "production",
+	mode: "development",
 	watch: false,
 	watchOptions: {
 		ignored: ["/node_modules/", "/Extra/", "/dist/"],
