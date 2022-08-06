@@ -11,13 +11,7 @@ module.exports = {
 			"./src/styles/mask-style.css",
 			"./src/styles/index.sass",
 		],
-		index: [
-			"./src/scripts/index.js",
-			"./src/scripts/parallax-scroll.js",
-			"./src/styles/index.sass",
-			"./src/styles/parallax-scroll.scss",
-			"./src/styles/mask-style.css",
-		],
+		index: ["./src/scripts/index.js", "./src/scripts/parallax-scroll.js", "./src/styles/index.sass", "./src/styles/parallax-scroll.scss", "./src/styles/mask-style.css"],
 		all: ["./src/scripts/all.js", "./src/styles/all.scss"],
 	},
 	output: {
@@ -41,8 +35,8 @@ module.exports = {
 			},
 		],
 	},
-	mode: "development",
-	watch: true,
+	mode: "production",
+	watch: false,
 	watchOptions: {
 		ignored: ["/node_modules/", "/Extra/", "/dist/"],
 	},
